@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import static j.SwingConsole.run;
-//1063 10
+//1063 11
 public class ColorButton extends JFrame {
     Random rand = new Random();
     ArrayList<Color> colors = new ArrayList<>();
