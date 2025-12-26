@@ -57,15 +57,11 @@ public class AnimateSinWave extends JFrame{
     public AnimateSinWave() {
         add(sines);
         ActionListener a;
-        Timer t = new Timer(del, a =new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                for (int i=0; i<100;i++) {
-                    sines.setCycles(i);
-                }
+        Timer t = new Timer(del, e-> {
+            for (int i=0; i<100;i++) {
+                sines.setCycles(i);
             }
         });
-        t.addActionListener(a);
         t.start();
         adjustCycles.addChangeListener(new ChangeListener() {
             public void stateChanged(ChangeEvent e) {
